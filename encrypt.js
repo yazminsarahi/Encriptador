@@ -1,6 +1,6 @@
-//document.getElementById("mueco").style.display = "none";
-//document.getElementById("tx-ningun").style.display = "none";
-//document.getElementById("tx-ingresa").style.display = "none";
+document.getElementById("tb-decrypt").style.display = "none";
+document.getElementById("bt-copiar").style.display = "none";
+
 
        
     
@@ -10,12 +10,17 @@ function shownonemessage(){
         }
         document.getElementById("tx-ningun").style.display = "block";
         document.getElementById("tx-ingresa").style.display = "block";
+        document.getElementById("tb-decrypt").style.display = "none";
+        document.getElementById("bt-copiar").style.display = "none";
+    
 }
 
 function hideshownonemessage(){
          document.getElementById("mueco").style.display = "none";
        document.getElementById("tx-ningun").style.display = "none";
        document.getElementById("tx-ingresa").style.display = "none";
+        document.getElementById("tb-decrypt").style.display = "block";
+        document.getElementById("bt-copiar").style.display = "block";
 }
     
 function encrypt(){   
@@ -38,7 +43,7 @@ function encrypt(){
         }[m];
     });
         document.getElementById("tb-decrypt").value=decryptedstr;
-        document.getElementById("tb-encrypt").value="";   
+        document.getElementById("tb-encrypt").value="Ingrese el texto aqui";   
    }
 }
     String.prototype.mapReplace = function(map) {
@@ -52,7 +57,7 @@ function encrypt(){
     
 function decrypt(){
     
-   decryptedstr = document.getElementById("tb-decrypt").value;
+   decryptedstr = document.getElementById("tb-decrypt").value.toLowerCase();
    if(encryptedstr===""){
         shownonemessage();
         document.getElementById("tb-encrypt").value="";
@@ -80,4 +85,3 @@ function copy(){
           }
            // alert(successful);   
     }
-    
