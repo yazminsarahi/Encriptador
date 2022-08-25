@@ -1,6 +1,6 @@
-document.getElementById("mueco").style.display = "none";
-document.getElementById("tx-ningun").style.display = "none";
-document.getElementById("tx-ingresa").style.display = "none";
+//document.getElementById("mueco").style.display = "none";
+//document.getElementById("tx-ningun").style.display = "none";
+//document.getElementById("tx-ingresa").style.display = "none";
 
        
     

@@ -25,33 +25,32 @@
 
 .mytextbox{
     border-color: Transparent;  
-    border:0; 
+   
     padding:10px; 
     font-size:1.3em; 
     font-family:"Ubuntu Light","Ubuntu","Ubuntu Mono","Segoe Print","Segoe UI";
-    color:#ccc; 
-    border:solid 1px #ccc; 
     margin:0 0 20px;   
-    -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2); 
-    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2); 
-    box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px; 
-    border-radius: 3px;   
     width:100%;
-    opacity:80%;
-    
+    opacity:100%;
+    border:none;
+    outline: none;
+    border-style: none; 
+    overflow: auto;    
   /* text style*/  
-  color: var(--dark-bluedark-blue-300);
-  cursor: pointer;
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-m);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 20px;
-  min-height: 20px;
-  white-space: nowrap;
+      color: var(--dark-bluedark-blue-300);
+      cursor: pointer;
+      font-family: var(--font-family-inter);
+      font-size: var(--font-size-m);
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 20px;
+      min-height: 20px;
+      white-space: nowrap;
 }
+#tb-encrypt{
+    background-color:var(--light-bluelight-blue-100);
+}
+
 .mytextbox:focus { 
     outline: none !important;
     border:1px solid #CFFFE5;
@@ -234,8 +233,10 @@
 }
 
 .mueco {
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
+  margin-top:100%;
+  
 }
 
 .frame-5 {
@@ -278,6 +279,8 @@
 }
 
 
+  
+    
 
 
 /* Variables */
@@ -389,9 +392,11 @@ rgba(255, 255, 255, 1);
          width:100%;
     }
     
-    #mueco{
+       #mueco{
         display:none;
     }
+    
+    
     .frame-5 {
       align-items: center;
       display: inline-block;
@@ -448,6 +453,10 @@ rgba(255, 255, 255, 1);
           gap: 10%;         
           width: 100%; /*width: 680px;*/
         }
+       #mueco{
+        display:none;
+    }
+    
     .frame-5 {
       align-items: center;
       display: inline-block;
